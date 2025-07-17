@@ -43,6 +43,12 @@ html, body {
 }
 
 @layer base {
+  html, body {
+    @apply font-mono;
+  }
+  h1, h2, h3, h4, h5, h6, .title, .project-title {
+    @apply font-sans;
+  }
   * {
     @apply border-border;
   }
@@ -213,6 +219,17 @@ html.has-scroll-dragging {
   font-family: 'JetBrains Mono';
   src: url('/fonts/JetBrainsMono-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Remove Lato import and font-face, add Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgoKcg72j00.woff2') format('woff2');
+  font-weight: 400 900;
   font-style: normal;
   font-display: swap;
 }
