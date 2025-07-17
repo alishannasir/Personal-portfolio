@@ -32,16 +32,16 @@ const ProjectsSection = () => {
   });
 
   return (
-    <section id="projects" className="py-15 min-h-screen flex items-center justify-center" data-scroll-section>
+    <section id="projects" className="py-15 min-h-screen flex items-center justify-center bg-black" data-scroll-section>
       <div className="relative w-full">
         <motion.div className="px-10 py-10">
           <HoverText
             text="Projects"
             className="project-title 
               text-4xl md:text-6xl lg:text-7xl 
-              font-serif tracking-tight 
-              text-foreground/95            
-              group-hover:text-foreground/50
+              font-bold tracking-tight
+              text-foreground/100            
+              group-hover:text-foreground/80
               transition-colors duration-300" 
           />
         </motion.div>
@@ -61,9 +61,9 @@ const ProjectsSection = () => {
               <HoverText 
                 className="project-title 
                   text-4xl md:text-6xl lg:text-7xl 
-                  font-serif tracking-tight 
-                  text-foreground/95            
-                  group-hover:text-foreground/50
+                  font-bold tracking-tight
+                  text-foreground/100            
+                  group-hover:text-foreground/80
                   transition-colors duration-300 
                   cursor-pointer" 
                 text={project.title}
@@ -81,9 +81,9 @@ const ProjectsSection = () => {
               text="   *All Work*"
               className="project-title 
                 text-4xl md:text-6xl lg:text-7xl 
-                font-serif tracking-tight 
-                text-foreground/95            
-                group-hover:text-foreground/50
+                font-bold tracking-tight
+                text-foreground/100            
+                group-hover:text-foreground/80
                 transition-colors duration-300" 
             />
           </motion.div>

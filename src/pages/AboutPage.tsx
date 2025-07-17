@@ -6,8 +6,8 @@ import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, Github, Linkedin, Twitter, Mail } from "lucide-react";
 import LocomotiveScroll from "locomotive-scroll";
-import ExperienceTimeline from '@/components/sections/ExperienceTimeline';
-import FloatingSkills from "@/components/FloatingSkills";
+// import ExperienceTimeline from '@/components/sections/ExperienceTimeline';
+import SkillTags from "@/components/SkillTags";
 
 const AboutPage = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -96,7 +96,6 @@ const AboutPage = () => {
   
   return (
     <div ref={scrollRef} data-scroll-container>
-      <FloatingSkills skills={skills.flatMap(s => s.items)} navHeight={navHeight} footerHeight={footerHeight} containerHeight={containerHeight} />
       <div ref={navRef}><Navigation /></div>
       
       <main className="pt-32 px-6 md:px-12 flex flex-col items-center justify-center min-h-[80vh]">
@@ -141,7 +140,7 @@ const AboutPage = () => {
               flawlessly across all devices and platforms.
             </p>
             {/* Experience Timeline */}
-            <ExperienceTimeline />
+            {/* <ExperienceTimeline /> */}
             {/* End Experience Timeline */}
             {/* <h2 className="text-2xl font-medium mb-6 mt-20">Skills & Expertise</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
@@ -175,6 +174,7 @@ const AboutPage = () => {
           </motion.div>
         </div>
       </main>
+      <SkillTags skills={skills.flatMap(s => s.items)} />
       <div ref={footerRef}><Footer /></div>
     </div>
   );

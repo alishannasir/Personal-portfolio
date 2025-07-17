@@ -102,14 +102,14 @@ export function Navigation() {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
         >
-          <div className="group relative">
+          <Link to="/" className="group relative" data-cursor="hover">
             <p className="text-md font-mono tracking-wider transition-opacity duration-300 group-hover:opacity-0">
               <HoverText text="alishan"/>
             </p>
             <p className="text-md font-mono tracking-wider text-primary absolute top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <HoverText text="آلِیشان"/>
             </p>
-          </div>
+          </Link>
         </motion.div>
         
         {/* Center Navigation */}
